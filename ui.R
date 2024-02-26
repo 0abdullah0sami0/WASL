@@ -9,7 +9,7 @@ dashboardPage(
     tags$head(
       tags$link(rel = "shortcut icon", href = "Good-logo.ico")
     ),
-    navbarPage(title=div(img(src="Good logo.png", style = "width:8%;height:10%; position:relative;display:right-align;margin-top:-10px;")),
+    navbarPage(title=div(img(src="Saudi-Ministry-of-Health-Logo.ico", style = "width:8%;height:10%; position:relative; display:right-align; margin-top:-10px; margin-right:300px;")),
                theme = shinytheme("lumen"),
                windowTitle = "WASL",
                tabPanel("Source Files",

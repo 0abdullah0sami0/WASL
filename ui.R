@@ -12,8 +12,11 @@ dashboardPage(
     navbarPage(title=div(img(src="Saudi-Ministry-of-Health-Logo.ico", style = "width:8%;height:10%; position:relative; display:right-align; margin-top:-10px; margin-right:300px;")),
                theme = shinytheme("lumen"),
                windowTitle = "WASL",
+               position = "fixed-top",
                tabPanel("Source Files",
                         column(width = 12,align = "center",
+                               br(),
+                               br(),
                                h3("WASL"),
                                p("Wasl Program is designed to address both direct and indirect challenges faced by health center beneficiaries under the Ministry of Health through the use of advanced technical tools."),
                                br(),
@@ -26,14 +29,20 @@ dashboardPage(
                                hr(),
                                fluidRow(
                                  column(width = 12,
-                                        img(src = "application.png", style = "width:70%;height:70%;")
+                                        img(src = "application.png", style = "width:70%;height:70%;"),
                                         # embed_url("https://www.youtube.com/watch?v=-IBxIXBaei8") %>%
                                         #   use_bs_responsive()
+                                        br(),
+                                        br(),
+                                        actionButton("contact", label = "Contact Us", onclick = "window.open('https://forms.gle/cCsNPfhmPre9WSPdA', '_blank')")
+                                        
                                  )
                                )
                         )
                ),
                tabPanel("What is WASL?",
+                        br(),
+                        br(),
                         h1("WASL Program"),
                         p("The WASL program aims to address all the direct and indirect challenges that health center beneficiaries encounter by utilizing the latest technical tools. The program's components:"),
                         p("Aspects that are directly related to the patient:"),
@@ -48,6 +57,11 @@ dashboardPage(
                         tags$li("Staff documentation index"),
                         br(),
                         h2("1. Waiting Screen"),
+                        fluidRow(
+                          column(width = 6, align = "center", img(src = "5.png", style = "width:95%;height:95%;")),
+                          column(width = 6, align = "center", img(src = "4.png", style = "width:95%;height:95%;"))
+                        ),
+                        br(),
                         p("The waiting screen displays the approximate waiting time for the beneficiary in two cases."),
                         tags$li("If a beneficiary has an appointment, the approximate entry time will be displayed for them, with no preference given to one beneficiary over another."),
                         tags$li("If a beneficiary doesn't have an appointment: The center registers all visitors without an appointment as soon as they arrive at the lounge, regardless of whether they have an appointment or not. The waiting screen displays their turn after the last individual with an appointment."),
@@ -57,6 +71,11 @@ dashboardPage(
                         tags$li("The expected waiting time is updated every 5 to 10 minutes based on the number of beneficiaries available whose service has not been completed"),
                         br(),
                         h2("2. Referrals"),
+                        fluidRow(
+                          column(width = 6, align = "center", img(src = "2.png", style = "width:95%;height:95%;")),
+                          column(width = 6, align = "center", img(src = "3.png", style = "width:95%;height:95%;"))
+                        ),
+                        br(),
                         p("Referrals are intended to follow up with the beneficiary at the health center."),
                         tags$li("The beneficiary can book appointments in health centers without any difficulties if they require follow-up within the center."),
                         tags$li("If the beneficiary needs follow-up outside the center, the doctor may opt to transfer them to the hospital, which is the responsibility of the referral officer. Interactive reports, including referrals, are also available at the center."),
@@ -84,6 +103,10 @@ dashboardPage(
                         tags$li("Executive Director"),
                         br(),
                         h2("3. Patient Experience Program"),
+                        fluidRow(
+                          column(width = 12, align = "center", img(src = "1.png", style = "width:70%;height:70%;"))
+                        ),
+                        br(),
                         p("The objective of the program:"),
                         p("After follow-up on communications, it was noted that in many communications, the procedures for providing services to beneficiaries and the job descriptions of the staff of the Center are flawed, and there is no performance measurement to standardize these procedures. Hence, the Patient Experience Program, which aims at:"),
                         tags$li("Standardization of procedures"),
@@ -93,7 +116,7 @@ dashboardPage(
                         tags$li("Clarity"),
                         tags$li("Decision makers can find out there are challenges, but the root of the problem may be unclear and therefore persist: All the challenges and procedures followed can be learned in detail through the program."),
                         br(),
-                        h2("4. Evaluation following the beneficiary's departure"),
+                        h2("4. Evaluation following the beneficiary's departure (In development)"),
                         tags$li("A one-question questionnaire is sent to the beneficiary: The questionnaire aims to inform beneficiaries who have not received the service about their satisfaction and to collect their feedback so that it can be avoided in the future."),
                         br(),
                         p("There are two cases after sending the questionnaire:"),
@@ -104,6 +127,8 @@ dashboardPage(
                         fluidRow(column(width = 12,
                           align = "right",
                           style = "direction:rtl;",
+                          br(),
+                          br(),
                           h1("برنامج وصل"),
                           p(" المباشرة وغير المباشرة التي تواجه مستفيدي المراكز الصحية من خلال استخدام أحدث الأدوات التقنية.الجوانب التي يحتويها البرنامج: "),
                           p("الجوانب المباشرة التي لها صلة بالمريض بشكل مباشر:"),
@@ -118,6 +143,11 @@ dashboardPage(
                           tags$li("مؤشر وثائق الموظفين"),
                           br(),
                           h2("1. شاشة الانتظار"),
+                          fluidRow(
+                            column(width = 6, align = "center", img(src = "5.png", style = "width:95%;height:95%;")),
+                            column(width = 6, align = "center", img(src = "4.png", style = "width:95%;height:95%;"))
+                          ),
+                          br(),
                           p("شاشة انتظار المستفيد توضح وقت الانتظار التقريبي للمستفيد في حالتين:"),
                           tags$li("أن يكون للمستفيد موعد: سوف يظهر الوقت التقريبي لكل مستفيد للدخول بناء على الطبيب أو العيادة دون تقديم مستفيد على آخر"),
                           tags$li("أن لا يكون للمستفيد موعد: يتم تسجيل جميع زوار المركز حتى الذين ليس لديهم مواعيد فور وصولهم لصالة الاستقبال بنفس الطريقة التي يتم تسجيل الذين لديهم مواعيد غير أن شاشة الانتظار تظهر ترتيبهم بعد آخر واحد لديه موعد"),
@@ -127,6 +157,11 @@ dashboardPage(
                           tags$li("كما أن الوقت المتوقع للانتظار يتم تحديثه كل 5 إلى 10 دقائق بناء على عدد المستفيدين المتواجدين الذي لم يتم الانتهاء من خدمتهم"),
                           br(),
                           h2("2. الإحالات"),
+                          fluidRow(
+                            column(width = 6, align = "center", img(src = "2.png", style = "width:95%;height:95%;")),
+                            column(width = 6, align = "center", img(src = "3.png", style = "width:95%;height:95%;"))
+                          ),
+                          br(),
                           p("الإحالات : الهدف منها متابعة المستفيد في المركز الصحي"),
                           tags$li(" في حال كان المستفيد يحتاج إلى متابعة داخل المركز: لا توجد تحديات للمستفيد حيال حجز مواعيد في المراكز الصحية"),
                           tags$li(" في حال كان المستفيد يحتاج إلى متابعة خارج المركز: في حال قرر الطبيب تحويل المستفيد إلى المستشفى يكتب له تحويل وتنتقل مهمة تحويل المستفيد إلى موظف الإحالات كما أن المركز لديه العديد من التقارير المباشرة التفاعلية منها الإحالات"),
@@ -154,6 +189,10 @@ dashboardPage(
                           tags$li("المدير التنفيذي"),
                           br(),
                           h2("3. برنامج تجربة المريض"),
+                          fluidRow(
+                            column(width = 12, align = "center", img(src = "1.png", style = "width:70%;height:70%;"))
+                          ),
+                          br(),
                           p("الهدف من البرنامج:"),
                           p("بعد متابعة البلاغات لوحظ أن الخلل في كثير من البلاغات في الإجراءات المتبعة لخدمة المستفيد والأوصاف الوظيفية للموظفين بالمركز كما أنه لا توجد أداءه لقياس الإجراءات وتوحيدها من هنا جاء برنامج تجربة المريض والذي يهدف إلى:"),
                           tags$li("توحيد الإجراءات"),
@@ -163,7 +202,7 @@ dashboardPage(
                           tags$li("الوضوح"),
                           tags$li("يمكن لأصحاب القرار معرفة وجود تحديات لكن جذر المشكلة قد يكون غير واضح ومن ثم استمرارها عن طريق البرنامج يمكن معرفة جميع التحديات والإجراءات المتبعة بالتفصيل"),
                           br(),
-                          h2("4. التقييم بعد خروج المستفيد"),
+                          h2("4. التقييم بعد خروج المستفيد (جاري العمل)"),
                           tags$li("يتم إرسال استبيان مكون من سؤال واحد للمستفيد. الهدف من الاستبيان التواصل مع جميع من لم تنال الخدمة على رضاه من المستفيدين الذين لديهم مواعيد ومعرفة الملاحظات التي لديهم حتى يتم تفاديها مستقبلا"),
                           br(),
                           p("لدينا حالتان بعد إرسال الاستبيان:"),

@@ -19,6 +19,7 @@ dashboardPage(
                                br(),
                                h3("WASL"),
                                p("Wasl Program is designed to address both direct and indirect challenges faced by health center beneficiaries under the Ministry of Health through the use of advanced technical tools."),
+                               p("The WASL program and its associated files were last updated on March 21, 2024."),
                                br(),
                                fluidRow(
                                  column(offset = 3, width = 2, align = "center",downloadButton("id1","Download Excel file")),

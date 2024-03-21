@@ -59,7 +59,7 @@ This project was built in Rsudio using R language and Shiny package. Here is the
 * [![shinydashboard][shinydashboard.com]][shinydashboard-url]
 * [![shinythemes][shinythemes.com]][shinythemes-url]
 * [![vembedr][vembedr.com]][vembedr-url]
-* [![RColorBrewer][RColorBrewer.com]][RColorBrewer-url]
+* [![shinyWidgets][shinyWidgets.com]][shinyWidgets-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,5 +87,5 @@ Distributed under the Creative Commons Attribution 4.0 International License. Se
 [shinythemes-url]: https://www.rdocumentation.org/packages/shinythemes/versions/1.2.0
 [vembedr.com]: https://img.shields.io/badge/vembedr-Package-blue?style=for-the-badge
 [vembedr-url]: https://www.rdocumentation.org/packages/vembedr/versions/0.1.5
-[RColorBrewer.com]: https://img.shields.io/badge/RColorBrewer-Package-blue?style=for-the-badge
-[RColorBrewer-url]: https://rdrr.io/cran/RColorBrewer/
+[shinyWidgets.com]: https://img.shields.io/badge/shinyWidgets-Package-blue?style=for-the-badge
+[shinyWidgets-url]: https://www.rdocumentation.org/packages/shinyWidgets/versions/0.8.2

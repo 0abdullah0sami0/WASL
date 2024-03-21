@@ -6,7 +6,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://abdullah-hr.shinyapps.io/Employee_Report/">
+  <a href="https://abdullah-hr.shinyapps.io/WASL/">
     <img src="www/Saudi-Ministry-of-Health-Logo.ico" alt="Logo" width="80" height="80">
   </a>
 
@@ -17,7 +17,7 @@
   The WASL program is a set of Excel programs and PowerBI Dashboards dedicated for leaders in healthcare centers to facilitate the achievement of the center's objectives.
 
 <br />
-    <a href="https://abdullah-hr.shinyapps.io/Employee_Report/"><strong>Explore the application »</strong></a>
+    <a href="https://abdullah-hr.shinyapps.io/WASL/"><strong>Explore the application »</strong></a>
     <br />
     <br />
   </p>

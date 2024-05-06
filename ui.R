@@ -29,16 +29,22 @@ dashboardPage(
                                br(),
                                hr(),
                                fluidRow(
-                                 column(width = 12,
+                                 column(width = 6,
+                                        # img(src = "application.png", style = "width:70%;height:70%;"),
+                                        embed_url("https://www.youtube.com/watch?v=XokpY7Cx0xI&t=13s") %>%
+                                          use_bs_responsive(),
+                                        br(),
+                                        br(),
+                                 ),
+                                 column(width = 6,
                                         # img(src = "application.png", style = "width:70%;height:70%;"),
                                         embed_url("https://www.youtube.com/watch?v=LhA01U_gXZc") %>%
                                           use_bs_responsive(),
                                         br(),
                                         br(),
-                                        actionButton("contact", label = "Contact Us", onclick = "window.open('https://forms.gle/cCsNPfhmPre9WSPdA', '_blank')")
-                                        
-                                 )
-                               )
+                                 ),
+                                 actionButton("contact", label = "Contact Us", onclick = "window.open('https://forms.gle/cCsNPfhmPre9WSPdA', '_blank')")
+                               ),
                         )
                ),
                tabPanel("What is WASL?",
